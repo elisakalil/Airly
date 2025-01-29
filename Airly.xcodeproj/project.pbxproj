@@ -1,0 +1,663 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		694B8C272D4811FB006D9A6D /* AirlyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694B8C262D4811FB006D9A6D /* AirlyApp.swift */; };
+		694B8C292D4811FB006D9A6D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694B8C282D4811FB006D9A6D /* ContentView.swift */; };
+		694B8C2B2D4811FD006D9A6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 694B8C2A2D4811FD006D9A6D /* Assets.xcassets */; };
+		694B8C2E2D4811FD006D9A6D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 694B8C2D2D4811FD006D9A6D /* Preview Assets.xcassets */; };
+		694B8C382D4811FD006D9A6D /* AirlyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694B8C372D4811FD006D9A6D /* AirlyTests.swift */; };
+		694B8C422D4811FD006D9A6D /* AirlyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694B8C412D4811FD006D9A6D /* AirlyUITests.swift */; };
+		694B8C442D4811FD006D9A6D /* AirlyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694B8C432D4811FD006D9A6D /* AirlyUITestsLaunchTests.swift */; };
+		694B8C522D4812C5006D9A6D /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694B8C512D4812C5006D9A6D /* LocationManager.swift */; };
+		694B8C552D482124006D9A6D /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694B8C542D482124006D9A6D /* WelcomeView.swift */; };
+		694B8C572D48238A006D9A6D /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694B8C562D48238A006D9A6D /* LoadingView.swift */; };
+		694B8C592D482CF9006D9A6D /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694B8C582D482CF9006D9A6D /* WeatherManager.swift */; };
+		698587252D4924BD00314752 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698587242D4924BD00314752 /* WeatherView.swift */; };
+		698587272D4925F600314752 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698587262D4925F600314752 /* ModelData.swift */; };
+		698587292D49273600314752 /* weatherData.json in Resources */ = {isa = PBXBuildFile; fileRef = 698587282D49273600314752 /* weatherData.json */; };
+		6985872B2D492C7400314752 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6985872A2D492C7400314752 /* Extensions.swift */; };
+		6985872E2D4A723800314752 /* WeatherRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6985872D2D4A723800314752 /* WeatherRow.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		694B8C342D4811FD006D9A6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 694B8C1B2D4811FB006D9A6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 694B8C222D4811FB006D9A6D;
+			remoteInfo = Airly;
+		};
+		694B8C3E2D4811FD006D9A6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 694B8C1B2D4811FB006D9A6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 694B8C222D4811FB006D9A6D;
+			remoteInfo = Airly;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		694B8C232D4811FB006D9A6D /* Airly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Airly.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		694B8C262D4811FB006D9A6D /* AirlyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirlyApp.swift; sourceTree = "<group>"; };
+		694B8C282D4811FB006D9A6D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		694B8C2A2D4811FD006D9A6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		694B8C2D2D4811FD006D9A6D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		694B8C332D4811FD006D9A6D /* AirlyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirlyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		694B8C372D4811FD006D9A6D /* AirlyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirlyTests.swift; sourceTree = "<group>"; };
+		694B8C3D2D4811FD006D9A6D /* AirlyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirlyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		694B8C412D4811FD006D9A6D /* AirlyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirlyUITests.swift; sourceTree = "<group>"; };
+		694B8C432D4811FD006D9A6D /* AirlyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirlyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		694B8C512D4812C5006D9A6D /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		694B8C542D482124006D9A6D /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		694B8C562D48238A006D9A6D /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		694B8C582D482CF9006D9A6D /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
+		698587242D4924BD00314752 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
+		698587262D4925F600314752 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		698587282D49273600314752 /* weatherData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = weatherData.json; sourceTree = "<group>"; };
+		6985872A2D492C7400314752 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		6985872D2D4A723800314752 /* WeatherRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRow.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		694B8C202D4811FB006D9A6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		694B8C302D4811FD006D9A6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		694B8C3A2D4811FD006D9A6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		694B8C1A2D4811FB006D9A6D = {
+			isa = PBXGroup;
+			children = (
+				694B8C252D4811FB006D9A6D /* Airly */,
+				694B8C362D4811FD006D9A6D /* AirlyTests */,
+				694B8C402D4811FD006D9A6D /* AirlyUITests */,
+				694B8C242D4811FB006D9A6D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		694B8C242D4811FB006D9A6D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				694B8C232D4811FB006D9A6D /* Airly.app */,
+				694B8C332D4811FD006D9A6D /* AirlyTests.xctest */,
+				694B8C3D2D4811FD006D9A6D /* AirlyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		694B8C252D4811FB006D9A6D /* Airly */ = {
+			isa = PBXGroup;
+			children = (
+				6985872F2D4A953C00314752 /* Extensions */,
+				6985872C2D4A721500314752 /* Components */,
+				694B8C532D482034006D9A6D /* Views */,
+				694B8C502D4812B0006D9A6D /* Managers */,
+				694B8C262D4811FB006D9A6D /* AirlyApp.swift */,
+				694B8C2A2D4811FD006D9A6D /* Assets.xcassets */,
+				694B8C2C2D4811FD006D9A6D /* Preview Content */,
+			);
+			path = Airly;
+			sourceTree = "<group>";
+		};
+		694B8C2C2D4811FD006D9A6D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				694B8C2D2D4811FD006D9A6D /* Preview Assets.xcassets */,
+				698587262D4925F600314752 /* ModelData.swift */,
+				698587282D49273600314752 /* weatherData.json */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		694B8C362D4811FD006D9A6D /* AirlyTests */ = {
+			isa = PBXGroup;
+			children = (
+				694B8C372D4811FD006D9A6D /* AirlyTests.swift */,
+			);
+			path = AirlyTests;
+			sourceTree = "<group>";
+		};
+		694B8C402D4811FD006D9A6D /* AirlyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				694B8C412D4811FD006D9A6D /* AirlyUITests.swift */,
+				694B8C432D4811FD006D9A6D /* AirlyUITestsLaunchTests.swift */,
+			);
+			path = AirlyUITests;
+			sourceTree = "<group>";
+		};
+		694B8C502D4812B0006D9A6D /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				694B8C512D4812C5006D9A6D /* LocationManager.swift */,
+				694B8C582D482CF9006D9A6D /* WeatherManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		694B8C532D482034006D9A6D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				694B8C282D4811FB006D9A6D /* ContentView.swift */,
+				694B8C542D482124006D9A6D /* WelcomeView.swift */,
+				694B8C562D48238A006D9A6D /* LoadingView.swift */,
+				698587242D4924BD00314752 /* WeatherView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6985872C2D4A721500314752 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				6985872D2D4A723800314752 /* WeatherRow.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		6985872F2D4A953C00314752 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6985872A2D492C7400314752 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		694B8C222D4811FB006D9A6D /* Airly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 694B8C472D4811FD006D9A6D /* Build configuration list for PBXNativeTarget "Airly" */;
+			buildPhases = (
+				694B8C1F2D4811FB006D9A6D /* Sources */,
+				694B8C202D4811FB006D9A6D /* Frameworks */,
+				694B8C212D4811FB006D9A6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Airly;
+			productName = Airly;
+			productReference = 694B8C232D4811FB006D9A6D /* Airly.app */;
+			productType = "com.apple.product-type.application";
+		};
+		694B8C322D4811FD006D9A6D /* AirlyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 694B8C4A2D4811FD006D9A6D /* Build configuration list for PBXNativeTarget "AirlyTests" */;
+			buildPhases = (
+				694B8C2F2D4811FD006D9A6D /* Sources */,
+				694B8C302D4811FD006D9A6D /* Frameworks */,
+				694B8C312D4811FD006D9A6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				694B8C352D4811FD006D9A6D /* PBXTargetDependency */,
+			);
+			name = AirlyTests;
+			productName = AirlyTests;
+			productReference = 694B8C332D4811FD006D9A6D /* AirlyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		694B8C3C2D4811FD006D9A6D /* AirlyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 694B8C4D2D4811FD006D9A6D /* Build configuration list for PBXNativeTarget "AirlyUITests" */;
+			buildPhases = (
+				694B8C392D4811FD006D9A6D /* Sources */,
+				694B8C3A2D4811FD006D9A6D /* Frameworks */,
+				694B8C3B2D4811FD006D9A6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				694B8C3F2D4811FD006D9A6D /* PBXTargetDependency */,
+			);
+			name = AirlyUITests;
+			productName = AirlyUITests;
+			productReference = 694B8C3D2D4811FD006D9A6D /* AirlyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		694B8C1B2D4811FB006D9A6D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					694B8C222D4811FB006D9A6D = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					694B8C322D4811FD006D9A6D = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 694B8C222D4811FB006D9A6D;
+					};
+					694B8C3C2D4811FD006D9A6D = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 694B8C222D4811FB006D9A6D;
+					};
+				};
+			};
+			buildConfigurationList = 694B8C1E2D4811FB006D9A6D /* Build configuration list for PBXProject "Airly" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 694B8C1A2D4811FB006D9A6D;
+			productRefGroup = 694B8C242D4811FB006D9A6D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				694B8C222D4811FB006D9A6D /* Airly */,
+				694B8C322D4811FD006D9A6D /* AirlyTests */,
+				694B8C3C2D4811FD006D9A6D /* AirlyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		694B8C212D4811FB006D9A6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				694B8C2E2D4811FD006D9A6D /* Preview Assets.xcassets in Resources */,
+				698587292D49273600314752 /* weatherData.json in Resources */,
+				694B8C2B2D4811FD006D9A6D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		694B8C312D4811FD006D9A6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		694B8C3B2D4811FD006D9A6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		694B8C1F2D4811FB006D9A6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				694B8C292D4811FB006D9A6D /* ContentView.swift in Sources */,
+				6985872B2D492C7400314752 /* Extensions.swift in Sources */,
+				694B8C592D482CF9006D9A6D /* WeatherManager.swift in Sources */,
+				694B8C272D4811FB006D9A6D /* AirlyApp.swift in Sources */,
+				694B8C522D4812C5006D9A6D /* LocationManager.swift in Sources */,
+				6985872E2D4A723800314752 /* WeatherRow.swift in Sources */,
+				694B8C572D48238A006D9A6D /* LoadingView.swift in Sources */,
+				698587272D4925F600314752 /* ModelData.swift in Sources */,
+				698587252D4924BD00314752 /* WeatherView.swift in Sources */,
+				694B8C552D482124006D9A6D /* WelcomeView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		694B8C2F2D4811FD006D9A6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				694B8C382D4811FD006D9A6D /* AirlyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		694B8C392D4811FD006D9A6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				694B8C442D4811FD006D9A6D /* AirlyUITestsLaunchTests.swift in Sources */,
+				694B8C422D4811FD006D9A6D /* AirlyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		694B8C352D4811FD006D9A6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 694B8C222D4811FB006D9A6D /* Airly */;
+			targetProxy = 694B8C342D4811FD006D9A6D /* PBXContainerItemProxy */;
+		};
+		694B8C3F2D4811FD006D9A6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 694B8C222D4811FB006D9A6D /* Airly */;
+			targetProxy = 694B8C3E2D4811FD006D9A6D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		694B8C452D4811FD006D9A6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		694B8C462D4811FD006D9A6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		694B8C482D4811FD006D9A6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Airly/Preview Content\"";
+				DEVELOPMENT_TEAM = 39AJ27VU38;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elisakalil.apple-samplecode-landmarks.Airly";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		694B8C492D4811FD006D9A6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Airly/Preview Content\"";
+				DEVELOPMENT_TEAM = 39AJ27VU38;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elisakalil.apple-samplecode-landmarks.Airly";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		694B8C4B2D4811FD006D9A6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 39AJ27VU38;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elisakalil.apple-samplecode-landmarks.AirlyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Airly.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Airly";
+			};
+			name = Debug;
+		};
+		694B8C4C2D4811FD006D9A6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 39AJ27VU38;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elisakalil.apple-samplecode-landmarks.AirlyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Airly.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Airly";
+			};
+			name = Release;
+		};
+		694B8C4E2D4811FD006D9A6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 39AJ27VU38;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elisakalil.apple-samplecode-landmarks.AirlyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Airly;
+			};
+			name = Debug;
+		};
+		694B8C4F2D4811FD006D9A6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 39AJ27VU38;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elisakalil.apple-samplecode-landmarks.AirlyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Airly;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		694B8C1E2D4811FB006D9A6D /* Build configuration list for PBXProject "Airly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				694B8C452D4811FD006D9A6D /* Debug */,
+				694B8C462D4811FD006D9A6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		694B8C472D4811FD006D9A6D /* Build configuration list for PBXNativeTarget "Airly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				694B8C482D4811FD006D9A6D /* Debug */,
+				694B8C492D4811FD006D9A6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		694B8C4A2D4811FD006D9A6D /* Build configuration list for PBXNativeTarget "AirlyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				694B8C4B2D4811FD006D9A6D /* Debug */,
+				694B8C4C2D4811FD006D9A6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		694B8C4D2D4811FD006D9A6D /* Build configuration list for PBXNativeTarget "AirlyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				694B8C4E2D4811FD006D9A6D /* Debug */,
+				694B8C4F2D4811FD006D9A6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 694B8C1B2D4811FB006D9A6D /* Project object */;
+}
