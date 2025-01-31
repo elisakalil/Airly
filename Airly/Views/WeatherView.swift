@@ -9,22 +9,25 @@ import SwiftUI
 
 struct WeatherView: View {
     var weather: ResponseBody
-    
+
     var body: some View {
-        VStack(alignment: .leading) {
-            VStack {
-                Header(with: weather)
-                Spacer()
-                Spacer()
-                CardView(with: weather)
-                Spacer()
+        ZStack(alignment: .bottom) {
+            ScrollView {
+                VStack {
+                    Header(with: weather)
+                    Spacer()
+                    CardView(with: weather)
+                    Spacer().frame(height: 200)
+                }
+                .padding()
+                .frame(maxWidth: .infinity, alignment: .leading)
             }
-            .padding()
-            .frame(
-                maxWidth: .infinity,
-                alignment: .leading
-            )
+            
             CardInfo(with: weather)
+                .frame(maxWidth: .infinity)
+                .background(.white)
+                .clipShape(RoundedRectangle(cornerRadius: 20))
+                .shadow(radius: 5)
         }
         .edgesIgnoringSafeArea(.bottom)
         .preferredColorScheme(.dark)
@@ -207,16 +210,17 @@ func CardInfo(with weather: ResponseBody) -> some View {
                 WeatherRow(
                     logo: "thermometer",
                     name: "Min temp",
-                    value: weather.main.temp_min.roundDouble() + "°"
+                    value: weather.main.temp_min.roundDouble().formattedTemperature(locale: Locale(identifier: "pt-BR")) + "°"
                 )
                 
                 
                 WeatherRow(
                     logo: "thermometer",
                     name: "Max temp",
-                    value: weather.main.temp_max.roundDouble() + "°"
+                    value: weather.main.temp_max.roundDouble().formattedTemperature(locale: Locale(identifier: "pt-BR")) + "°"
                 )
             }
+            .padding(.trailing, 35)
 
             VStack {
                 WeatherRow(
@@ -251,6 +255,8 @@ func CardInfo(with weather: ResponseBody) -> some View {
     )
 }
 
+#if DEBUG
 #Preview {
     WeatherView(weather: previewWeather)
 }
+#endif
