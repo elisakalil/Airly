@@ -9,6 +9,7 @@ import SwiftUI
 
 struct WeatherView: View {
     var weather: ResponseBody
+    var onRefresh: () async -> Void
 
     var body: some View {
         ZStack(alignment: .bottom) {
@@ -21,6 +22,9 @@ struct WeatherView: View {
                 }
                 .padding()
                 .frame(maxWidth: .infinity, alignment: .leading)
+            }
+            .refreshable {
+                await onRefresh()
             }
             
             CardInfo(with: weather)
@@ -257,6 +261,9 @@ func CardInfo(with weather: ResponseBody) -> some View {
 
 #if DEBUG
 #Preview {
-    WeatherView(weather: previewWeather)
+    WeatherView(
+        weather: previewWeather,
+        onRefresh: {}
+    )
 }
 #endif

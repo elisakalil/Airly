@@ -18,18 +18,14 @@ struct ContentView: View {
             
             if let location = locationManager.location {
                 if let weather = weather {
-                    WeatherView(weather: weather)
+                    WeatherView(
+                        weather: weather,
+                        onRefresh: fetchWeather
+                    )
                 } else {
                     LoadingView()
                         .task {
-                            do {
-                                weather = try await weatherManager.getCurrentWheather(
-                                    latitude: location.latitude,
-                                    longitude: location.longitude
-                                )
-                            } catch {
-                                print("Error getting weather: \(error)")
-                            }
+                            await fetchWeather()
                         }
                 }
             } else {
@@ -49,6 +45,18 @@ struct ContentView: View {
             )
         )
         .preferredColorScheme(.dark)
+    }
+    
+    func fetchWeather() async {
+        guard let location = locationManager.location else { return }
+        do {
+            weather = try await weatherManager.getCurrentWheather(
+                latitude: location.latitude,
+                longitude: location.longitude
+            )
+        } catch {
+            print("Error getting weather: \(error)")
+        }
     }
 }
 
